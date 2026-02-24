@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
       position: "Full Stack Engineer",
       location: "Remote",
       type: "Full-time",
-      salary: "$120,000 – $150,000 + equity",
+      salary: "$120,000 – $150,000",
       description:
         "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
       status: "none",
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Event delegation for job card buttons
+  // job card buttons
   jobsListEl.addEventListener("click", (event) => {
     const target = event.target;
     const cardEl = target.closest("[data-job-id]");
@@ -222,11 +222,11 @@ document.addEventListener("DOMContentLoaded", () => {
         <header class="flex items-start justify-between gap-3 sm:gap-4 mb-1">
           <div>
             <h3
-              class="text-[0.7rem] font-semibold tracking-[0.18em] text-slate-400 uppercase"
+              class="text-sm sm:text-base font-semibold text-slate-900"
             >
               ${job.companyName}
             </h3>
-            <p class="text-sm sm:text-base font-semibold text-slate-900">
+            <p class="text-sm text-slate-500">
               ${job.position}
             </p>
           </div>
