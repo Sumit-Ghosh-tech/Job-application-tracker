@@ -33,3 +33,16 @@
                document.querySelector(".child").addEventListener("click", e => e.stopPropagation());
 
 
+## Features
+
+- Dashboard showing total, interview, and rejected job counts.
+- List of job applications with company, role, location, salary, and status.
+- Buttons to mark jobs as Interview or Rejected.
+- Delete jobs from the list.
+- Real-time updates and filtering by status.
+
+## Technologies Used
+
+- HTML, CSS, Tailwind, JavaScript               
+
+
