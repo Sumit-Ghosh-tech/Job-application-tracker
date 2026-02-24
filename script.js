@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Initial jobs data
   const initialJobs = [
     {
       id: 1,
       companyName: "Mobile First Corp",
-      position: "React Native Engineer",
+      position: "React Native Developer",
       location: "Remote • United States",
       type: "Full-time",
       salary: "$110,000 – $135,000",
       description:
-        "Build cross-platform mobile experiences for our flagship application. Collaborate with product and design to ship features used by millions of customers.",
+        "Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.",
       status: "none",
     },
     {
@@ -20,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Hybrid",
       salary: "$80,000 – $100,000",
       description:
-        "Create engaging marketing sites for high-growth clients. Combine strong visual design skills with modern frontend development practices.",
+        "Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.",
       status: "none",
     },
     {
@@ -31,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "On-site",
       salary: "$95,000 – $125,000",
       description:
-        "Turn complex data into compelling dashboards and visual stories. Work closely with analytics and product teams to drive data-informed decisions.",
+        "Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.",
       status: "none",
     },
     {
@@ -42,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Contract",
       salary: "$90,000 – $120,000",
       description:
-        "Design and maintain scalable backend services in a cloud-native environment using modern DevOps practices and continuous delivery workflows.",
+        "Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.",
       status: "none",
     },
     {
@@ -53,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Full-time",
       salary: "$105,000 – $140,000",
       description:
-        "Build thoughtful user interfaces for our suite of web products. Balance product thinking, visual craft, and front-end implementation.",
+        "Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.",
       status: "none",
     },
     {
@@ -64,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Hybrid",
       salary: "$115,000 – $145,000",
       description:
-        "Develop enterprise web applications using modern JavaScript frameworks. Collaborate with cross-functional teams in a fast-paced environment.",
+        "Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.",
       status: "none",
     },
     {
@@ -75,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "Full-time",
       salary: "$120,000 – $150,000 + equity",
       description:
-        "Own new product features end-to-end on our core platform. Work closely with founders to shape the roadmap and engineering culture.",
+        "Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.",
       status: "none",
     },
     {
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
       type: "On-site",
       salary: "$140,000 – $175,000",
       description:
-        "Lead frontend architecture for our analytics dashboard. Mentor junior engineers and champion performance and accessibility best practices.",
+        "We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.",
       status: "none",
     },
   ];
