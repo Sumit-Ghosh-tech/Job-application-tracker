@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Job Application Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["system-ui", "ui-sans-serif", "Segoe UI", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <!-- Header -->
+      <header class="mb-6 sm:mb-8">
+        <h1 class="text-2xl sm:text-3xl font-semibold tracking-tight">
+          Job Application Tracker
+        </h1>
+      </header>
+
+      <!-- Dashboard summary -->
+      <section
+        class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6 sm:mb-8"
+        aria-label="Job application summary">
+        <div class="bg-white rounded-xl shadow-md px-4 py-3 sm:px-5 sm:py-4">
+          <p
+            class="text-[0.7rem] sm:text-xs font-medium text-slate-500 uppercase tracking-[0.18em]">
+            Total
+          </p>
+          <p class="mt-1 text-xl font-bold" id="total-count">0</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md px-4 py-3 sm:px-5 sm:py-4">
+          <p
+            class="text-[0.7rem] sm:text-xs font-medium text-slate-500 uppercase tracking-[0.18em]">
+            Interview
+          </p>
+          <p
+            class="mt-1 text-xl font-bold text-emerald-600"
+            id="interview-count">
+            0
+          </p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md px-4 py-3 sm:px-5 sm:py-4">
+          <p
+            class="text-[0.7rem] sm:text-xs font-medium text-slate-500 uppercase tracking-[0.18em]">
+            Rejected
+          </p>
+          <p class="mt-1 text-xl font-bold text-rose-600" id="rejected-count">
+            0
+          </p>
+        </div>
+      </section>
+
+      <hr class="border-slate-200 mb-5" />
+
+      <!-- Jobs section -->
+      <section class="mt-2" aria-label="Available jobs">
+        <header
+          class="flex flex-wrap items-baseline justify-between gap-y-2 mb-3">
+          <h2 class="text-base sm:text-lg font-semibold">Available Jobs</h2>
+          <p
+            class="text-[0.7rem] sm:text-xs md:text-sm text-slate-500"
+            id="jobs-count">
+            0 jobs
+          </p>
+        </header>
+
+        <!-- Tabs -->
+        <div
+          class="inline-flex flex-wrap gap-2"
+          role="tablist"
+          aria-label="Filter jobs by status">
+          <button
+            type="button"
+            data-tab="all"
+            class="tab-btn inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border bg-blue-600 text-white border-blue-600 shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500">
+            All
+          </button>
+
+          <button
+            type="button"
+            data-tab="interview"
+            class="tab-btn inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500">
+            Interview
+          </button>
+
+          <button
+            type="button"
+            data-tab="rejected"
+            class="tab-btn inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium border border-slate-200 bg-slate-100 text-slate-700 hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-blue-500">
+            Rejected
+          </button>
+        </div>
+
+        <!-- Jobs list -->
+        <div class="mt-4">
+          <div id="jobs-list" class="space-y-4"></div>
+
+          <!-- Empty state -->
+          <div
+             id="empty-state"
+             class="hidden mt-4 bg-white rounded-xl shadow-md py-20 px-4 text-center">
+  <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center">
+    <img
+      src="./jobs.png"
+      alt="No jobs found"
+      class="h-40 w-40 object-contain" />
+  </div>
+
+  <h3 class="text-sm sm:text-base font-semibold text-slate-900">
+    No jobs available
+  </h3>
+
+  <p class="mt-1 text-xs sm:text-sm text-slate-500">
+    Check back soon for new job opportunities.
+  </p>
+</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
