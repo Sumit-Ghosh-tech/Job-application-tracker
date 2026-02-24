@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: 5,
-      companyName: "Innovation Labs",
+      companyName: "Innovation Lab",
       position: "UX/UI Engineer",
       location: "Austin, TX",
       type: "Full-time",
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       id: 7,
-      companyName: "StartupXYZ",
+      companyName: "Startup XYZ",
       position: "Full Stack Engineer",
       location: "Remote",
       type: "Full-time",
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const state = {
     jobs: initialJobs,
-    currentTab: "all", // 'all' | 'interview' | 'rejected'
+    currentTab: "all", 
   };
 
   // DOM elements
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const emptyStateEl = document.getElementById("empty-state");
   const tabButtons = document.querySelectorAll("[data-tab]");
 
-  // Tab style helper
+  // Tab style 
   const tabActiveClasses =
     "bg-blue-600 text-white border-blue-600 shadow-sm".split(" ");
   const tabInactiveClasses =
@@ -238,8 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
               viewBox="0 0 16 16"
               width="16"
               height="16"
-              aria-hidden="true"
-            >
+              aria-hidden="true">
               <path
                 d="M3.2 3.2l9.6 9.6M12.8 3.2l-9.6 9.6"
                 stroke="currentColor"
@@ -287,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function render() {
     const counts = getCounts();
 
-    // Dashboard summary
+    // Dashboard
     totalCountEl.textContent = counts.total;
     interviewCountEl.textContent = counts.interview;
     rejectedCountEl.textContent = counts.rejected;
